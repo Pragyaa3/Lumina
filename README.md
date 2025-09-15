@@ -1,5 +1,7 @@
 # 🌟 Lumina
 
+> Built on Flow Blockchain  
+
 Lumina is a **transparent blockchain-based donation platform** built for the Flow Hackathon.  
 Our mission is to make donations **trustworthy, traceable, and community-driven**.
 
@@ -16,10 +18,17 @@ Our mission is to make donations **trustworthy, traceable, and community-driven*
 
 ## ⚡ Tech Stack
 - **Frontend**: Next.js, TailwindCSS
-- **Blockchain**: Flow (Cadence smart contracts)
+- **Flow Blockchain**: (Cadence smart contracts, Flow EVM) 
+- **@onflow/fcl**: frontend flow client library
 - **Wallets**: Flow Wallet, MetaMask (for EVM support)
 
 ---
+
+## Status
+Currently under development as part of the [ReWTF Hackathon](https://github.com/onflow/rewtf-registry).  
+
+---
+
 
 ## 🌍 Vision
 - We want to make donations as transparent and impactful as possible.
