@@ -1,7 +1,7 @@
 import Donation from 0xYourContractAddress
 
-transaction(amount: UFix64) {
-    prepare(acct: AuthAccount) {
-        Donation.donate(amount: amount)
+transaction(causeId: String, amount: UFix64) {
+    prepare(signer: AuthAccount) {
+        Donation.donate(causeId: causeId, amount: amount)
     }
 }
