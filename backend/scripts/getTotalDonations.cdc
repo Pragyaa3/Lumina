@@ -1,5 +1,6 @@
-import Donation from 0x783e668fcfec3578
+// scripts/getTotalDonations.cdc
+import Donation from 0xYourContractAddress
 
-pub fun main(): UFix64 {
+access(all) fun main(): UFix64 {
     return Donation.totalDonations
 }

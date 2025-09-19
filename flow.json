@@ -1,0 +1,21 @@
+@"
+{
+  "contracts": {
+    "Donation": "./backend/contracts/Donation.cdc"
+  },
+  "networks": {
+    "testnet": "access.devnet.nodes.onflow.org:9000"
+  },
+  "accounts": {
+    "testnet-account": {
+      "address": "0x23564a5651ac4133",
+      "key": "YOUR_PRIVATE_KEY_HERE"
+    }
+  },
+  "deployments": {
+    "testnet": {
+      "testnet-account": ["Donation"]
+    }
+  }
+}
+"@ | Out-File -FilePath "flow.json" -Encoding UTF8

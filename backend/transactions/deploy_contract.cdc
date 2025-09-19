@@ -1,7 +1,11 @@
-import Donation from 0x01 // replace 0x01 with your Flow account
-
+// transactions/deploy_contract.cdc (UPDATED)
 transaction {
-    prepare(acct: AuthAccount) {
-        acct.contracts.add(name: "Donation", code: "Donation contract code".utf8)
+    prepare(signer: auth(AddContract) &Account) {
+        // Deploy the Donation contract
+        // Replace CONTRACT_CODE with your actual contract code
+        signer.contracts.add(
+            name: "Donation", 
+            code: "CONTRACT_CODE_HERE".utf8
+        )
     }
 }
