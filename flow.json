@@ -1,4 +1,3 @@
-@"
 {
   "contracts": {
     "Donation": "./backend/contracts/Donation.cdc"
@@ -9,7 +8,7 @@
   "accounts": {
     "testnet-account": {
       "address": "0x23564a5651ac4133",
-      "key": "YOUR_PRIVATE_KEY_HERE"
+      "key": "ff8d8b6c3b5b237da584b1812c5f462fedb2ad6b90c6702f4d35d90874eeb34b"
     }
   },
   "deployments": {
@@ -18,4 +17,3 @@
     }
   }
 }
-"@ | Out-File -FilePath "flow.json" -Encoding UTF8

@@ -6,7 +6,7 @@ import * as fcl from "@onflow/fcl";
 fcl.config({
   "accessNode.api": "https://rest-testnet.onflow.org", // Flow testnet
   "discovery.wallet": "https://fcl-discovery.onflow.org/testnet/authn",
-  "0xDonation": "0x783e668fcfec3578" // Replace with your contract address
+  "0xDonation": "0x23564a5651ac4133" // Replace with your contract address
 });
 
 export default function Home() {
@@ -38,7 +38,7 @@ export default function Home() {
     try {
       const response = await fcl.query({
         cadence: `
-          import Donation from 0x783e668fcfec3578
+          import Donation from 0x23564a5651ac4133
           
           access(all) fun main(): {UInt64: Donation.Cause} {
             return Donation.getAllCauses()
@@ -56,7 +56,7 @@ export default function Home() {
     try {
       const response = await fcl.query({
         cadence: `
-          import Donation from 0x783e668fcfec3578
+          import Donation from 0x23564a5651ac4133
           
           access(all) fun main(): UFix64 {
             return Donation.totalDonations
@@ -80,7 +80,7 @@ export default function Home() {
     try {
       const transactionId = await fcl.mutate({
         cadence: `
-          import Donation from 0x783e668fcfec3578
+          import Donation from 0x23564a5651ac4133
           
           transaction(name: String, description: String, goal: UFix64) {
             prepare(signer: AuthAccount) {
@@ -135,7 +135,7 @@ export default function Home() {
     try {
       const transactionId = await fcl.mutate({
         cadence: `
-          import Donation from 0x783e668fcfec3578
+          import Donation from 0x23564a5651ac4133
           
           transaction(causeId: UInt64, amount: UFix64) {
             prepare(signer: AuthAccount) {
